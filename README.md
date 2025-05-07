@@ -2,10 +2,9 @@
 
 ## Insert name of group members here
 
-- `<Inser name of Group member 1> <Student code>`
-- `...`
-- `...`
-- `<Inser name of Group member N> <Student code>`
+- Magnus Thronsen - studnr: 111408
+- Imaginary Group Member - studnr: 123456
+  
 
 ## Confirmation
 ### Part 1
@@ -17,6 +16,4 @@
 
 
 # OEKA201AssignmentMAT
-# OEKA201AssignmentMAT
-# OEKA201AssignmentMAT
-# OEKA201AssignmentMAT
+
