@@ -2,7 +2,7 @@
 
 ## Insert name of group members here
 
-- Magnus Thronsen - studnr: 111408
+- Magnus Thronsen - studnr:111408
   
 
 ## Confirmation
