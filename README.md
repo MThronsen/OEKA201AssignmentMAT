@@ -3,7 +3,6 @@
 ## Insert name of group members here
 
 - Magnus Thronsen - studnr: 111408
-- Imaginary Group Member - studnr: 123456
   
 
 ## Confirmation
