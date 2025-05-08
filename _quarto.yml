@@ -6,14 +6,14 @@ project:
     - "assignment_gretl.qmd"
     - "assignment_r.qmd"
 website:
-  title: "OEKA201AssignmentMAT>"
+  title: "OEKA201AssignmentMAT"
   navbar:
     left:
       - text: "Index"
         href: index.qmd
-      - text: Exercises using Gretl
-        href: assignment_gretl.qmd
-      - text: Exercises using R
+      - text: "Exercises using Gretl"
+        href: assignment_gret1.qmd
+      - text: "Exercises using R"
         href: assignment_r.qmd
 format:
   html:
