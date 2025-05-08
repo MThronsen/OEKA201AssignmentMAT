@@ -11,10 +11,10 @@ website:
     left:
       - text: "Index"
         href: index.qmd
-      - text: "Exercises using Gretl"
-        href: assignment_gret1.pdf
+      - text: "Exercises using Gret1"
+        href: assignment_gret1.qmd
       - text: "Exercises using R"
-        href: assignment_r.pdf
+        href: assignment_r.qmd
 format:
   html:
     theme: cosmo

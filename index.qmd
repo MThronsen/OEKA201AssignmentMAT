@@ -3,7 +3,7 @@ title: "OEKA201AssignmentMAT"
 format: html
 ---
 
-This is a Quarto website.
+This is a Quarto website for my assignment.
 
 Last time updated:
 
