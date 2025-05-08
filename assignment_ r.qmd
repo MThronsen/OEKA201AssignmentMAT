@@ -1,12 +1,22 @@
 ---
-title: "assignment_gret1"
+title: "Assignment ØKA201 Data Analysis part 2025"
+subtitle: "Magnus Thronsen 111408"
 format: pdf
 editor: visual
+author:
+- name: Magnus Thronsen
+- email: magnusat@hiof.no
+abstract: My solution to the Data analysis assignment
+keywords:
+- Gretl
+- WinterRain
+- Temp
+- HarvestRain
+- Age
+bibliography: ref.bib
+
 ---
 
-# Assignment ØKA201 Data analysis part, 2025
-
-## Magnus Thronsen, studnr: 111408
 
 \
 
