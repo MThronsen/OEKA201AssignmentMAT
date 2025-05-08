@@ -6,7 +6,8 @@ editor: visual
 author:
 - name: Magnus Thronsen
 - email: magnusat@hiof.no
-abstract: My solution to the Data analysis assignment
+affiliation: Høyskolen i Østfold
+abstract: My solution to the Data analysis assignment in ØKA 201
 keywords:
 - Gretl
 - WinterRain
@@ -14,9 +15,7 @@ keywords:
 - HarvestRain
 - Age
 bibliography: ref.bib
-
 ---
-
 
 \
 

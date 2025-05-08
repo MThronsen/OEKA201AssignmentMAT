@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>assignment_gret1 – OEKA201AssignmentMAT</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">OEKA201AssignmentMAT</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <span class="nav-link">
+<span class="menu-text">about.qmd</span>
+    </span>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#assignment-øka201-data-analysis-part-2025" id="toc-assignment-øka201-data-analysis-part-2025" class="nav-link active" data-scroll-target="#assignment-øka201-data-analysis-part-2025">Assignment ØKA201 Data analysis part, 2025</a>
+  <ul class="collapse">
+  <li><a href="#magnus-thronsen-studnr-111408" id="toc-magnus-thronsen-studnr-111408" class="nav-link" data-scroll-target="#magnus-thronsen-studnr-111408">Magnus Thronsen, studnr: 111408</a></li>
+  <li><a href="#exercise-1" id="toc-exercise-1" class="nav-link" data-scroll-target="#exercise-1">Exercise 1:</a></li>
+  <li><a href="#exercise-2" id="toc-exercise-2" class="nav-link" data-scroll-target="#exercise-2">Exercise 2:</a>
+  <ul class="collapse">
+  <li><a href="#a-show-output-from-gretl" id="toc-a-show-output-from-gretl" class="nav-link" data-scroll-target="#a-show-output-from-gretl">a) Show output from Gretl</a></li>
+  <li><a href="#b-interpret-the-estimated-coefficients" id="toc-b-interpret-the-estimated-coefficients" class="nav-link" data-scroll-target="#b-interpret-the-estimated-coefficients">b) Interpret the estimated coefficients</a></li>
+  <li><a href="#c-test-whether-the-regressor-has-a-significant-effect-on-the-dependent-variable-at-a-1-level-of-significance" id="toc-c-test-whether-the-regressor-has-a-significant-effect-on-the-dependent-variable-at-a-1-level-of-significance" class="nav-link" data-scroll-target="#c-test-whether-the-regressor-has-a-significant-effect-on-the-dependent-variable-at-a-1-level-of-significance">c) Test whether the regressor has a significant effect on the dependent variable at a 1% level of significance</a></li>
+  <li><a href="#d-make-a-prediction-of-the-price-when-the-independent-variable-is-equal-to-its-minimum-value-mean-value-and-maximum-value" id="toc-d-make-a-prediction-of-the-price-when-the-independent-variable-is-equal-to-its-minimum-value-mean-value-and-maximum-value" class="nav-link" data-scroll-target="#d-make-a-prediction-of-the-price-when-the-independent-variable-is-equal-to-its-minimum-value-mean-value-and-maximum-value">d) Make a prediction of the price when the independent variable is equal to its minimum value, mean value, and maximum value</a></li>
+  <li><a href="#e-calculate-a-95-prediction-interval-for-the-price-of-the-1961-vintage" id="toc-e-calculate-a-95-prediction-interval-for-the-price-of-the-1961-vintage" class="nav-link" data-scroll-target="#e-calculate-a-95-prediction-interval-for-the-price-of-the-1961-vintage">e) Calculate a 95% prediction interval for the price of the 1961 vintage</a></li>
+  </ul></li>
+  <li><a href="#exercise-3" id="toc-exercise-3" class="nav-link" data-scroll-target="#exercise-3">Exercise 3</a>
+  <ul class="collapse">
+  <li><a href="#a-show-the-output-from-gretl" id="toc-a-show-the-output-from-gretl" class="nav-link" data-scroll-target="#a-show-the-output-from-gretl">a) Show the output from Gretl</a></li>
+  <li><a href="#b-interpret-the-estimated-slope-coefficients" id="toc-b-interpret-the-estimated-slope-coefficients" class="nav-link" data-scroll-target="#b-interpret-the-estimated-slope-coefficients">b) Interpret the estimated slope coefficients</a></li>
+  <li><a href="#c-compare-with-what-you-found-in-exercise-2" id="toc-c-compare-with-what-you-found-in-exercise-2" class="nav-link" data-scroll-target="#c-compare-with-what-you-found-in-exercise-2">c) Compare with what you found in Exercise 2</a></li>
+  </ul></li>
+  <li><a href="#exercise-4" id="toc-exercise-4" class="nav-link" data-scroll-target="#exercise-4">Exercise 4</a>
+  <ul class="collapse">
+  <li><a href="#a-show-the-output-from-gretl-1" id="toc-a-show-the-output-from-gretl-1" class="nav-link" data-scroll-target="#a-show-the-output-from-gretl-1">a) Show the output from Gretl</a></li>
+  <li><a href="#b-explain-how-high-levels-of-rainfall-in-the-harvest-season-can-affect-prices-through-fixed-effects-and-through-interaction-effects-with-temperature-based-on-the-estimated-model." id="toc-b-explain-how-high-levels-of-rainfall-in-the-harvest-season-can-affect-prices-through-fixed-effects-and-through-interaction-effects-with-temperature-based-on-the-estimated-model." class="nav-link" data-scroll-target="#b-explain-how-high-levels-of-rainfall-in-the-harvest-season-can-affect-prices-through-fixed-effects-and-through-interaction-effects-with-temperature-based-on-the-estimated-model.">b) Explain how high levels of rainfall in the harvest season can affect prices through fixed effects, and through interaction effects with temperature, based on the estimated model.</a></li>
+  </ul></li>
+  <li><a href="#exercise-5" id="toc-exercise-5" class="nav-link" data-scroll-target="#exercise-5">Exercise 5</a>
+  <ul class="collapse">
+  <li><a href="#a-calculate-the-residual-for-the-1961-vintage-using-model-1-model-2-and-model-3" id="toc-a-calculate-the-residual-for-the-1961-vintage-using-model-1-model-2-and-model-3" class="nav-link" data-scroll-target="#a-calculate-the-residual-for-the-1961-vintage-using-model-1-model-2-and-model-3">a) Calculate the residual for the 1961 vintage using Model 1, Model 2, and Model 3</a></li>
+  <li><a href="#b-comment-on-what-you-found-in-a-and-this-in-addition-to-other-relevant-information-to-discuss-briefly-which-model-you-would-prefer-to-use-for-predicting-bordeaux-vintage-wine-prices" id="toc-b-comment-on-what-you-found-in-a-and-this-in-addition-to-other-relevant-information-to-discuss-briefly-which-model-you-would-prefer-to-use-for-predicting-bordeaux-vintage-wine-prices" class="nav-link" data-scroll-target="#b-comment-on-what-you-found-in-a-and-this-in-addition-to-other-relevant-information-to-discuss-briefly-which-model-you-would-prefer-to-use-for-predicting-bordeaux-vintage-wine-prices">b) Comment on what you found in a), and this, in addition to other relevant information to discuss briefly which model you would prefer to use for predicting Bordeaux vintage wine prices</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="assignment_gret1.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">assignment_gret1</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="assignment-øka201-data-analysis-part-2025" class="level1">
+<h1>Assignment ØKA201 Data analysis part, 2025</h1>
+<section id="magnus-thronsen-studnr-111408" class="level2">
+<h2 class="anchored" data-anchor-id="magnus-thronsen-studnr-111408">Magnus Thronsen, studnr: 111408</h2>
+<p><br>
+</p>
+</section>
+<section id="exercise-1" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-1">Exercise 1:</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: center;">Mean</th>
+<th style="text-align: center;">Median</th>
+<th style="text-align: center;">S.D.</th>
+<th style="text-align: center;">Min</th>
+<th style="text-align: center;">Max</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">price</td>
+<td style="text-align: center;">1405,8</td>
+<td style="text-align: center;">1079,8</td>
+<td style="text-align: center;">1027,2</td>
+<td style="text-align: center;">495,17</td>
+<td style="text-align: center;">4883,9</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">WinterRain</td>
+<td style="text-align: center;">608,41</td>
+<td style="text-align: center;">600,00</td>
+<td style="text-align: center;">129,03</td>
+<td style="text-align: center;">376,00</td>
+<td style="text-align: center;">830,00</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">temp</td>
+<td style="text-align: center;">16,478</td>
+<td style="text-align: center;">16,417</td>
+<td style="text-align: center;">0,65919</td>
+<td style="text-align: center;">14,983</td>
+<td style="text-align: center;">17,650</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">HarvestRain</td>
+<td style="text-align: center;">144,81</td>
+<td style="text-align: center;">123,00</td>
+<td style="text-align: center;">73,066</td>
+<td style="text-align: center;">38,000</td>
+<td style="text-align: center;">292,00</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Age</td>
+<td style="text-align: center;">16,185</td>
+<td style="text-align: center;">16,000</td>
+<td style="text-align: center;">8,2464</td>
+<td style="text-align: center;">3,0000</td>
+<td style="text-align: center;">31,000</td>
+</tr>
+</tbody>
+</table>
+<p><img src="images/winterrain.png" class="img-fluid" width="480"><br>
+<img src="images/temp.png" class="img-fluid" width="480"><br>
+<img src="images/harvestrain.png" class="img-fluid" width="480"><br>
+<img src="images/age-01.png" class="img-fluid" width="480"><br>
+<br>
+</p>
+</section>
+<section id="exercise-2" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-2">Exercise 2:</h2>
+<section id="a-show-output-from-gretl" class="level3">
+<h3 class="anchored" data-anchor-id="a-show-output-from-gretl">a) Show output from Gretl</h3>
+<p>Model 3: OLS, using observations 1952-1980 (T = 27) Missing or incomplete observations dropped: 2 Dependent variable: price</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: center;">coefficent</th>
+<th style="text-align: center;">std. error</th>
+<th style="text-align: center;">t-ratio</th>
+<th style="text-align: center;">p-value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">const</td>
+<td style="text-align: center;">494,278</td>
+<td style="text-align: center;">402,112</td>
+<td style="text-align: center;">1,229</td>
+<td style="text-align: center;">0,2304</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Age</td>
+<td style="text-align: center;">56,3183</td>
+<td style="text-align: center;">22,2218</td>
+<td style="text-align: center;">2,534</td>
+<td style="text-align: center;">0,0179 **</td>
+</tr>
+</tbody>
+</table>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Mean dependent var</td>
+<td style="text-align: center;">1405,800</td>
+<td style="text-align: left;">S.D. dependent var</td>
+<td style="text-align: center;">1027,226</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sum squared resid</td>
+<td style="text-align: center;">21827151</td>
+<td style="text-align: left;">S.E. of regression</td>
+<td style="text-align: center;">934,3907</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">R-squared</td>
+<td style="text-align: center;">0,204406</td>
+<td style="text-align: left;">Adjusted R-squared</td>
+<td style="text-align: center;">0,172582</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F(1, 25)</td>
+<td style="text-align: center;">6,423065</td>
+<td style="text-align: left;">P-value(F)</td>
+<td style="text-align: center;">0,017902</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Log-likelihood</td>
+<td style="text-align: center;">−221,9495</td>
+<td style="text-align: left;">Akaike criterion</td>
+<td style="text-align: center;">447,8990</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Schwarz criterion</td>
+<td style="text-align: center;">450,4907</td>
+<td style="text-align: left;">Hannan-Quinn</td>
+<td style="text-align: center;">448,6697</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="b-interpret-the-estimated-coefficients" class="level3">
+<h3 class="anchored" data-anchor-id="b-interpret-the-estimated-coefficients">b) Interpret the estimated coefficients</h3>
+<p>494,278 is the estimated value of the dependent variable (price) when the age is zero.<br>
+<br>
+For every year the wine ages, the estimated price increases by 56,3183. We consider this statistically significant at the most commonly used 5% level of significance, since the p-value of 0.0171 is less than 0.05. This is also marked with two stars in the output from Gretl.</p>
+</section>
+<section id="c-test-whether-the-regressor-has-a-significant-effect-on-the-dependent-variable-at-a-1-level-of-significance" class="level3">
+<h3 class="anchored" data-anchor-id="c-test-whether-the-regressor-has-a-significant-effect-on-the-dependent-variable-at-a-1-level-of-significance">c) Test whether the regressor has a significant effect on the dependent variable at a 1% level of significance</h3>
+<p><strong>Null Hypothesis (H₀)</strong>: The Age coefficient = 0 (Age does not affect price).<br>
+<span class="math display">\[
+H_0 : \beta_1 = 0
+\]</span> <strong>Alt. Hypothesis (H₁)</strong>: The Age coefficient is not equal to 0 (Age does have an effect on price).<br>
+<span class="math display">\[
+H_1 : \beta_1 != 0
+\]</span></p>
+<p>Testing on a 1% significance level with a p-value of 0.0179. The p-value is greater than 0.01, which means that we can’t reject the null hypothesis at the 1% significance level. In other words, we do not have enough statistical evidence that age has an effect on price at this level of significance.</p>
+</section>
+<section id="d-make-a-prediction-of-the-price-when-the-independent-variable-is-equal-to-its-minimum-value-mean-value-and-maximum-value" class="level3">
+<h3 class="anchored" data-anchor-id="d-make-a-prediction-of-the-price-when-the-independent-variable-is-equal-to-its-minimum-value-mean-value-and-maximum-value">d) Make a prediction of the price when the independent variable is equal to its minimum value, mean value, and maximum value</h3>
+<p>The age is the independent variable. From the dataset we know that 3 is the minimum value, 16,185 is the mean value, and 31 is the maximum value. We also know that the constant is 494,278 and the coefficient for age is 56,3183.<br>
+</p>
+<p><strong>Minimum age:</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fl">494.278</span> <span class="sc">+</span> (<span class="fl">56.3183</span> <span class="sc">*</span> <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 663.2329</code></pre>
+</div>
+</div>
+<p><br>
+<strong>Mean age:</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fl">494.278</span> <span class="sc">+</span> (<span class="fl">56.3183</span> <span class="sc">*</span> <span class="fl">16.185</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1405.79</code></pre>
+</div>
+</div>
+<p><br>
+<strong>Maximum age:</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fl">494.278</span> <span class="sc">+</span> (<span class="fl">56.3183</span> <span class="sc">*</span> <span class="dv">31</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 2240.145</code></pre>
+</div>
+</div>
+</section>
+<section id="e-calculate-a-95-prediction-interval-for-the-price-of-the-1961-vintage" class="level3">
+<h3 class="anchored" data-anchor-id="e-calculate-a-95-prediction-interval-for-the-price-of-the-1961-vintage">e) Calculate a 95% prediction interval for the price of the 1961 vintage</h3>
+<p><br>
+For 95% confidence intervals, t(25, 0,025) = 2,060</p>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: center;">price</td>
+<td style="text-align: center;">prediction</td>
+<td style="text-align: center;">std. error</td>
+<td style="text-align: center;">95% interval</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">1961</td>
+<td style="text-align: center;">4883,90</td>
+<td style="text-align: center;">1733,28</td>
+<td style="text-align: center;">960,270</td>
+<td style="text-align: center;">-244,433 - 3710,99</td>
+</tr>
+</tbody>
+</table>
+<p>Forecast evaluation statistics using 1 observations</p>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td>Mean Error</td>
+<td>3150,6</td>
+</tr>
+<tr class="even">
+<td>Root Mean Squared Error</td>
+<td>3150,6</td>
+</tr>
+<tr class="odd">
+<td>Mean Absolute Error</td>
+<td>3150,6</td>
+</tr>
+<tr class="even">
+<td>Mean Percentage Error</td>
+<td>64,51</td>
+</tr>
+<tr class="odd">
+<td>Mean Absolute Percentage Error</td>
+<td>64,51</td>
+</tr>
+<tr class="even">
+<td>Theil’s U2</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>The 95% interval is [-244,433 - 3710,99]</p>
+</section>
+</section>
+<section id="exercise-3" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-3">Exercise 3</h2>
+<section id="a-show-the-output-from-gretl" class="level3">
+<h3 class="anchored" data-anchor-id="a-show-the-output-from-gretl">a) Show the output from Gretl</h3>
+<p><strong><br>
+</strong>Model 1: OLS, using observations 1952-1980 (T = 27)<br>
+Missing or incomplete observations dropped: 2<br>
+Dependent variable: price<br>
+<br>
+</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: center;">coefficient</th>
+<th style="text-align: center;">std. error</th>
+<th style="text-align: center;">t-ratio</th>
+<th style="text-align: center;">p-value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">const</td>
+<td style="text-align: center;">-15509,0</td>
+<td style="text-align: center;">3379,87</td>
+<td style="text-align: center;">-4,589</td>
+<td style="text-align: center;">0,0001 ***</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">WinterRain</td>
+<td style="text-align: center;">2,75098</td>
+<td style="text-align: center;">0,965119</td>
+<td style="text-align: center;">2,850</td>
+<td style="text-align: center;">0,0093 ***</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Temp</td>
+<td style="text-align: center;">930,787</td>
+<td style="text-align: center;">190,557</td>
+<td style="text-align: center;">4,885</td>
+<td style="text-align: center;">6,97e-05 ***</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">HarvestRain</td>
+<td style="text-align: center;">-5,04694</td>
+<td style="text-align: center;">1,61682</td>
+<td style="text-align: center;">-3,122</td>
+<td style="text-align: center;">0,0050 ***</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Age</td>
+<td style="text-align: center;">39,2126</td>
+<td style="text-align: center;">14,3490</td>
+<td style="text-align: center;">2,733</td>
+<td style="text-align: center;">0,0121 **</td>
+</tr>
+</tbody>
+</table>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Mean dependent var</td>
+<td style="text-align: center;">1405,800</td>
+<td style="text-align: left;">S.D. dependent var</td>
+<td style="text-align: center;">1027,226</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sum squared resid</td>
+<td style="text-align: center;">7238994</td>
+<td style="text-align: left;">S.E. of regression</td>
+<td style="text-align: center;">573,6246</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">R-squared</td>
+<td style="text-align: center;">0,736141</td>
+<td style="text-align: left;">Adjusted R-squared</td>
+<td style="text-align: center;">0,688166</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F(4, 22)</td>
+<td style="text-align: center;">15,34443</td>
+<td style="text-align: left;">P-value(F)</td>
+<td style="text-align: center;">3,93e-06</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Log-likelihood</td>
+<td style="text-align: center;">−207,0499</td>
+<td style="text-align: left;">Akaike criterion</td>
+<td style="text-align: center;">424,0999</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Schwarz criterion</td>
+<td style="text-align: center;">430,5791</td>
+<td style="text-align: left;">Hannan-Quinn</td>
+<td style="text-align: center;">426,0265</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="b-interpret-the-estimated-slope-coefficients" class="level3">
+<h3 class="anchored" data-anchor-id="b-interpret-the-estimated-slope-coefficients">b) Interpret the estimated slope coefficients</h3>
+<p><strong><br>
+WinterRain</strong>: The coefficient is 2.75098, which means the price increases by that amount for each additional unit of WinterRain. We consider this statistically significant at the most commonly used 5% level of significance, since the p-value of 0.0093 is less than 0.05. The p-value of 0.0093 also means it’s statistically significant at the 1% level since it’s less than 0.001.<br>
+<br>
+<strong>Temp</strong>: The coefficient is 930.787, which means the price increases by that amount for each additional unit of Temp. We consider this statistically significant at the most commonly used 5% level of significance, since the p-value of 6.97e-05 is less than 0.05. The p-value of 6.97e-05 also means it’s statistically significant at the 1% level since it’s less than 0.001.<br>
+<br>
+<strong>HarvestRain</strong>:The coefficient is -5.04694, which means the price decreases by that amount for each additional unit of HarvestRain. We consider this statistically significant at the most commonly used 5% level of significance, since the p-value of 0.0050 is less than 0.05. The p-value of 0.0050 also means it’s statistically significant at the 1% level since it’s less than 0.001.<br>
+<br>
+<strong>Age</strong>: The coefficient is 39.2126, which means the price increases by that amount for each additional unit of Age. We consider this statistically significant at the most commonly used 5% level of significance, since the p-value of 0.0121 is less than 0.05. The p-value of 0.0121 also means it’s <strong>not</strong> statistically significant at the 1% level since it’s higher than 0.001.</p>
+</section>
+<section id="c-compare-with-what-you-found-in-exercise-2" class="level3">
+<h3 class="anchored" data-anchor-id="c-compare-with-what-you-found-in-exercise-2">c) Compare with what you found in Exercise 2</h3>
+<p><strong><br>
+</strong>Looking at age just like we did in exercise 2, we see that the coefficient is now 39,2126. In exercise 2, it was 56,3183. The difference is that in exercise 2, we didnt take WinterRain, Temp and HarvestRain into consideration. These other variables were unknown.<br>
+<br>
+We see now that the age increases less per unit compared to exercise 2 when we add the other variables to the equation. The difference is that we now estimate what effect one unit of age will have on the price, given that WinterRain, Temp and HarvestRain are the same.<br>
+<br>
+The p-value has decreased slightly, but not enough to push it below the 1% significance level.</p>
+</section>
+</section>
+<section id="exercise-4" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-4">Exercise 4</h2>
+<section id="a-show-the-output-from-gretl-1" class="level3">
+<h3 class="anchored" data-anchor-id="a-show-the-output-from-gretl-1">a) Show the output from Gretl</h3>
+<p><strong><br>
+</strong>Model 2: OLS, using observations 1952-1980 (T = 27)<br>
+Missing or incomplete observations dropped: 2<br>
+Dependent variable: price</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: center;">coefficient</th>
+<th style="text-align: center;">std. error</th>
+<th style="text-align: center;">t-ratio</th>
+<th style="text-align: center;">p-value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">const</td>
+<td style="text-align: center;">−13319,6</td>
+<td style="text-align: center;">3910,53</td>
+<td style="text-align: center;">−3,406</td>
+<td style="text-align: center;">0,0023&nbsp; ***</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Temp</td>
+<td style="text-align: center;">902,820</td>
+<td style="text-align: center;">236,963</td>
+<td style="text-align: center;">&nbsp;3,810</td>
+<td style="text-align: center;">0,0009&nbsp; ***</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">DUM</td>
+<td style="text-align: center;">−815,924</td>
+<td style="text-align: center;">394,606</td>
+<td style="text-align: center;">−2,068</td>
+<td style="text-align: center;">0,0496&nbsp; **</td>
+</tr>
+</tbody>
+</table>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Mean dependent var</td>
+<td style="text-align: center;">1405,800</td>
+<td style="text-align: left;">S.D. dependent var</td>
+<td style="text-align: center;">1027,226</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sum squared resid</td>
+<td style="text-align: center;">15211368</td>
+<td style="text-align: left;">S.E. of regression</td>
+<td style="text-align: center;">796,120</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">R-squared</td>
+<td style="text-align: center;">0,445550</td>
+<td style="text-align: left;">Adjusted R-squared</td>
+<td style="text-align: center;">0,399345</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F(2, 24)</td>
+<td style="text-align: center;">9,643056</td>
+<td style="text-align: left;">P-value(F)</td>
+<td style="text-align: center;">0,000844</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Log-likelihood</td>
+<td style="text-align: center;">−217,0745</td>
+<td style="text-align: left;">Akaike criterion</td>
+<td style="text-align: center;">440,1490</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Schwarz criterion</td>
+<td style="text-align: center;">444,0365</td>
+<td style="text-align: left;">Hannan-Quinn</td>
+<td style="text-align: center;">441,3050</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="b-explain-how-high-levels-of-rainfall-in-the-harvest-season-can-affect-prices-through-fixed-effects-and-through-interaction-effects-with-temperature-based-on-the-estimated-model." class="level3">
+<h3 class="anchored" data-anchor-id="b-explain-how-high-levels-of-rainfall-in-the-harvest-season-can-affect-prices-through-fixed-effects-and-through-interaction-effects-with-temperature-based-on-the-estimated-model.">b) Explain how high levels of rainfall in the harvest season can affect prices through fixed effects, and through interaction effects with temperature, based on the estimated model.</h3>
+<p>This model includes a dummy variable which is a fixed effect. In this case it’s used to capture the effect of rainfall above 200mm. When the rainfall is above this threshold, it predicts a decrease in the price with - 815,924.<br>
+<br>
+When it comes to the interaction with temperature, there is a possibility that high levels of rainfall means cooler temperatures. Seeing as a single unit of Temp estimates an increase in price of 902,820, we can say that higher temperatures are connected to higher prices. This means that if high rainfall affects the temperature in a negative way, it could lower the price.</p>
+</section>
+</section>
+<section id="exercise-5" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-5">Exercise 5</h2>
+<section id="a-calculate-the-residual-for-the-1961-vintage-using-model-1-model-2-and-model-3" class="level3">
+<h3 class="anchored" data-anchor-id="a-calculate-the-residual-for-the-1961-vintage-using-model-1-model-2-and-model-3">a) Calculate the residual for the 1961 vintage using Model 1, Model 2, and Model 3</h3>
+<p>The actual price of the 1961 vintage is 4,883.903, WinterRain is 830, temp is 17,3333, HarvestRain is 38, and Age is 22.<br>
+<br>
+<br>
+<strong>Model 1:</strong><br>
+Price =</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fl">494.278</span> <span class="sc">+</span> (<span class="fl">56.3183</span> <span class="sc">*</span> <span class="dv">22</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1733.281</code></pre>
+</div>
+</div>
+<p>Residual for model 1 =</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fl">4883.903</span> <span class="sc">-</span> <span class="fl">1733.281</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 3150.622</code></pre>
+</div>
+</div>
+<p><strong><br>
+Model 2:</strong><br>
+Price =</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="sc">-</span><span class="fl">15509.0</span><span class="sc">+</span>(<span class="fl">2.75098</span><span class="sc">*</span><span class="dv">830</span>)<span class="sc">+</span>(<span class="fl">930.787</span><span class="sc">*</span><span class="fl">17.3333</span>)<span class="sc">+</span>(<span class="sc">-</span><span class="fl">5.04694</span><span class="sc">*</span><span class="dv">38</span>)<span class="sc">+</span>(<span class="fl">39.2126</span><span class="sc">*</span><span class="dv">22</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 3578.817</code></pre>
+</div>
+</div>
+<p><br>
+Residual for model 2 =</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fl">4883.903</span> <span class="sc">-</span> <span class="fl">3578.817</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1305.086</code></pre>
+</div>
+</div>
+<p><br>
+<strong>Model 3:</strong><br>
+Price =</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="sc">-</span><span class="fl">13319.6</span><span class="sc">+</span>(<span class="fl">902.820</span><span class="sc">*</span><span class="fl">17.333</span>)<span class="sc">+</span>(<span class="sc">-</span><span class="fl">815.924</span><span class="sc">*</span><span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 2328.979</code></pre>
+</div>
+</div>
+<p><br>
+Residual for model 3 =</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fl">4883.903</span> <span class="sc">-</span> <span class="fl">2328.979</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 2554.924</code></pre>
+</div>
+</div>
+</section>
+<section id="b-comment-on-what-you-found-in-a-and-this-in-addition-to-other-relevant-information-to-discuss-briefly-which-model-you-would-prefer-to-use-for-predicting-bordeaux-vintage-wine-prices" class="level3">
+<h3 class="anchored" data-anchor-id="b-comment-on-what-you-found-in-a-and-this-in-addition-to-other-relevant-information-to-discuss-briefly-which-model-you-would-prefer-to-use-for-predicting-bordeaux-vintage-wine-prices">b) Comment on what you found in a), and this, in addition to other relevant information to discuss briefly which model you would prefer to use for predicting Bordeaux vintage wine prices</h3>
+<p>The residual for model 1 is quite large. This model only considers the age of the wine, and the model is probably too simple to correctly estimate the actual price of the 1961 vintage. The 1961 vintage is the most expensive out of all the wines, so the model probably needs more variables to correctly predict the price.<br>
+<br>
+The residual for model 2 is still large, but considerably less than for model 1. This model includes all the variables we have available. Still, it predicts a moderate price for the 1961 vintage, compared to the actual price. However, seeing as the 1961 vintage is such an outlier, it would probably be impossible to correctly predict the price.<br>
+<br>
+Model 3 faces the same challenges as model 1 and the residual is pretty large. There are not enough variables. It also mainly focuses on the outliers with high rainfall which are wines that usually are cheap. Another challenge with this model is that it doesn’t differentiate rainfalls between 0 and 200.<br>
+<br>
+Based on the residuals I would prefer model 2 for predicting Bordeaux vintage wine prices. While the residual is still big, it’s hard to predict outliers. Some outliers are even such anomalies that a model that predicts it right might be worse for predicting other Bordeax vintage wine prices. However, model 2 can still be improved by adding additional variables.</p>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
