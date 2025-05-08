@@ -256,3 +256,22 @@ The residual for model 2 is still large, but considerably less than for model 1.
 Model 3 faces the same challenges as model 1 and the residual is pretty large. There are not enough variables. It also mainly focuses on the outliers with high rainfall which are wines that usually are cheap. Another challenge with this model is that it doesn't differentiate rainfalls between 0 and 200.\
 \
 Based on the residuals I would prefer model 2 for predicting Bordeaux vintage wine prices. While the residual is still big, it's hard to predict outliers. Some outliers are even such anomalies that a model that predicts it right might be worse for predicting other Bordeax vintage wine prices. However, model 2 can still be improved by adding additional variables.
+
+Conclusion:\
+\
+
+```{r}
+# Function to count words in a Quarto document
+count_words_in_qmd <- function(file_path) {
+  text <- tolower(readLines(file_path, warn = FALSE))
+  text <- paste(text, collapse = " ")
+  text <- gsub("^#.*$", "", text, perl = TRUE)  # Remove headers
+  text <- gsub("```.*?```", "", text, perl = TRUE)  # Remove code blocks
+  text <- gsub("`[^`]*`", "", text, perl = TRUE)  # Remove inline code
+  text <- gsub("\\s+", " ", text)  # Normalize spaces
+  words <- unlist(strsplit(text, "\\s+"))
+  words <- words[words != ""]
+  num_words <- length(words)
+  return(num_words)
+}
+```
