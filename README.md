@@ -9,10 +9,7 @@
 ### Part 1
 JIH, confirmed.
 ### Part 2
-`<Bjørnar will write his confirmed message here> `
 ### Part 3
-`<Jørn will write his confirmed message here> `
 
 
-# OEKA201AssignmentMAT
 
