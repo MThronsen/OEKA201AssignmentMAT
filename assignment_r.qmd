@@ -6,7 +6,7 @@ editor: visual
 author:
 - name: Magnus Thronsen
 - email: magnusat@hiof.no
-affiliation: Høyskolen i Østfold
+affiliation: Høgskolen i Østfold
 abstract: My solution to the Data analysis assignment in ØKA 201
 keywords:
 - Gretl
@@ -258,7 +258,21 @@ Model 3 faces the same challenges as model 1 and the residual is pretty large. T
 Based on the residuals I would prefer model 2 for predicting Bordeaux vintage wine prices. While the residual is still big, it's hard to predict outliers. Some outliers are even such anomalies that a model that predicts it right might be worse for predicting other Bordeax vintage wine prices. However, model 2 can still be improved by adding additional variables.
 
 Conclusion:\
-\
+
+```{r}
+cword <- function(file_path) {
+  # Read the content of the file
+  text <- tolower(readLines(file_path, warn = FALSE))
+  
+  # Split the text into words
+  words <- unlist(strsplit(text, "\\s+"))
+  
+  # Count the number of words
+  num_words <- length(words)
+  
+  return(num_words)
+}
+```
 
 ```{r}
 # Function to count words in a Quarto document
@@ -275,3 +289,5 @@ count_words_in_qmd <- function(file_path) {
   return(num_words)
 }
 ```
+
+@kivedal2023
