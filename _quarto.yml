@@ -3,7 +3,7 @@ project:
   output-dir: docs
   render:
     - "index.qmd"
-    - "assignment_gretl.qmd"
+    - "assignment_gret1.qmd"
     - "assignment_r.qmd"
 website:
   title: "OEKA201AssignmentMAT"
