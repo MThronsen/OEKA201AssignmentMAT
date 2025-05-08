@@ -12,26 +12,31 @@ website:
       - text: "Index"
         href: index.qmd
       - text: "Exercises using Gretl"
-        href: assignment_gret1.qmd
+        href: assignment_gret1.pdf
       - text: "Exercises using R"
-        href: assignment_r.qmd
+        href: assignment_r.pdf
 format:
   html:
     theme: cosmo
     css: styles.css
     toc: true
-    # you will need to add additonal stuff here assignment part 3
+    toc-depth: 3
+    mainfont: Monospace
+
   docx:
     toc: true
-    # you will need to add additonal stuff here assignment part 3
+    toc-depth: 3
+
   pdf:
     toc: true
+    toc-depth: 3
     number-sections: true
-    # you will need to add additonal stuff here assignment part 3
+
   epub:
     toc: true
     toc-depth: 3
-    # you will need to add additonal stuff here assignment part 3
+    mainfont: Arial
+
 bibliography: ref.bib
 
 
