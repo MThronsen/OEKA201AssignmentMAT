@@ -1,12 +1,9 @@
 ---
-title: "Assignment ØKA201 Data Analysis part 2025"
-subtitle: "Magnus Thronsen 111408"
-format: pdf
-editor: visual
+title: "assignment_r"
 author:
-- name: Magnus Thronsen
-- email: magnusat@hiof.no
-affiliation: Høgskolen i Østfold
+  - name: Magnus Thronsen
+    affiliations:
+      - Høgskolen i Østfold (HiOF)
 abstract: My solution to the Data analysis assignment in ØKA 201
 keywords:
 - Gretl
@@ -14,28 +11,35 @@ keywords:
 - Temp
 - HarvestRain
 - Age
-bibliography: ref.bib
 ---
 
-\
+
+
+```{r}
+#| echo=F
+source("script/estm.R")
+```
+
+Been reading []@kivedal2023]
 
 ## Exercise 1:
 
-|             |  Mean  | Median |  S.D.   |  Min   |  Max   |
-|:------------|:------:|:------:|:-------:|:------:|:------:|
-| price       | 1405,8 | 1079,8 | 1027,2  | 495,17 | 4883,9 |
-| WinterRain  | 608,41 | 600,00 | 129,03  | 376,00 | 830,00 |
-| temp        | 16,478 | 16,417 | 0,65919 | 14,983 | 17,650 |
-| HarvestRain | 144,81 | 123,00 | 73,066  | 38,000 | 292,00 |
-| Age         | 16,185 | 16,000 | 8,2464  | 3,0000 | 31,000 |
+```{r, echo=FALSE}
+#! echo=FALSE
+sds
+```
 
-![](images/winterrain.png){width="480"}\
-![](images/temp.png){width="480"}\
-![](images/harvestrain.png){width="480"}\
-![](images/age-01.png){width="480"}\
-\
+```{r, echo=FALSE}
+cds
+```
+
 
 ## Exercise 2:
+
+
+```{r, echo=FALSE}
+mod1
+```
 
 ### a) Show output from Gretl
 
@@ -122,6 +126,11 @@ The 95% interval is \[-244,433 - 3710,99\]
 
 ## Exercise 3
 
+
+```{r, echo=FALSE}
+mod2
+```
+
 ### a) Show the output from Gretl
 
 **\
@@ -168,6 +177,11 @@ We see now that the age increases less per unit compared to exercise 2 when we a
 The p-value has decreased slightly, but not enough to push it below the 1% significance level.
 
 ## Exercise 4
+
+
+```{r, echo=FALSE}
+mod3
+```
 
 ### a) Show the output from Gretl
 
@@ -259,35 +273,14 @@ Based on the residuals I would prefer model 2 for predicting Bordeaux vintage wi
 
 Conclusion:\
 
-```{r}
-cword <- function(file_path) {
-  # Read the content of the file
-  text <- tolower(readLines(file_path, warn = FALSE))
-  
-  # Split the text into words
-  words <- unlist(strsplit(text, "\\s+"))
-  
-  # Count the number of words
-  num_words <- length(words)
-  
-  return(num_words)
-}
+**Content of** `estm.R`
+
+R-code
+```{{r}}
+{{< include script/estm.R >}}
 ```
 
-```{r}
-# Function to count words in a Quarto document
-count_words_in_qmd <- function(file_path) {
-  text <- tolower(readLines(file_path, warn = FALSE))
-  text <- paste(text, collapse = " ")
-  text <- gsub("^#.*$", "", text, perl = TRUE)  # Remove headers
-  text <- gsub("```.*?```", "", text, perl = TRUE)  # Remove code blocks
-  text <- gsub("`[^`]*`", "", text, perl = TRUE)  # Remove inline code
-  text <- gsub("\\s+", " ", text)  # Normalize spaces
-  words <- unlist(strsplit(text, "\\s+"))
-  words <- words[words != ""]
-  num_words <- length(words)
-  return(num_words)
-}
-```
+### References
 
-@kivedal2023
+
+
