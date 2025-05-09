@@ -17,30 +17,28 @@ website:
         href: assignment_r.qmd
 format:
   html:
-    theme: cosmo
-    css: styles.css
     toc: true
     toc-depth: 3
-    mainfont: Monospace
-
+    number-sections: false
+    mainfont: "Monospace"
+    css: styles.css
   docx:
     toc: true
     toc-depth: 3
-
+    number-sections: false
   pdf:
     toc: true
     toc-depth: 3
-    number-sections: true
-    fig-align: center
-    tbl-colwidths: auto
-    
-
+    number-sections: false
+    lof: true
+    lot: true
   epub:
     toc: true
     toc-depth: 3
-    mainfont: Arial
-
+    number-sections: false
+    lof: true
+    lot: true
+    mainfont: "Arial"
 bibliography: ref.bib
-
 
 
